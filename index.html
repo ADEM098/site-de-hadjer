@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Le site de Hadjer — Campus France (L1)</title>
+  <meta name="description" content="Guide complet et pratique pour les démarches Campus France vers la première année universitaire (L1)." />
+  <link rel="stylesheet" href="style.css" />
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+  <header class="header">
+    <div class="container header-inner">
+      <a class="brand" href="index.html">
+        <img src="assets/logo.png" alt="Logo" class="logo" onerror="this.style.display='none'"/>
+        <span>Le site de Hadjer</span>
+      </a>
+
+      <nav class="nav" aria-label="Navigation principale">
+        <a href="index.html" class="active">Accueil</a>
+        <a href="etapes.html">Étapes</a>
+        <a href="conditions.html">Conditions</a>
+        <a href="universites.html">Universités</a>
+        <a href="faq.html">FAQ</a>
+        <a href="contact.html" class="btn">Contact</a>
+        <button id="themeToggle" class="btn icon-btn" aria-pressed="false" aria-label="Basculer thème">🌙</button>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <section class="hero reveal">
+      <div class="container grid-2">
+        <div>
+          <h1>Étudier en France — Guide complet pour la 1ʳᵉ année (L1)</h1>
+          <p>Bienvenue sur <strong>Le site de Hadjer</strong>. Ici tu trouveras toutes les étapes, documents, conseils et outils pour réussir ta démarche Campus France.</p>
+          <div class="actions">
+            <a href="etapes.html" class="btn primary">Commencer les démarches</a>
+            <a href="#outils" class="btn">Outils pratiques</a>
+          </div>
+          <ul class="highlights">
+            <li>Checklist interactive & export</li>
+            <li>Calendrier indicatif et timeline</li>
+            <li>Informations claires sur le TCF (B2), visas et universités</li>
+          </ul>
+        </div>
+        <div>
+          <img src="assets/hero.jpg" alt="Étudier en France" class="hero-img" onerror="this.style.display='none'"/>
+        </div>
+      </div>
+    </section>
+
+    <section id="outils" class="section alt reveal">
+      <div class="container">
+        <h2>Outils pratiques</h2>
+        <div class="grid-2">
+          <div>
+            <h3>Checklist interactive</h3>
+            <form id="checklist" class="checklist" aria-label="Checklist"></form>
+            <div class="actions">
+              <button id="resetChecklist" class="btn" type="button">Réinitialiser</button>
+              <a id="exportChecklist" class="btn" download="checklist-hadjer.txt">Exporter</a>
+            </div>
+          </div>
+          <div>
+            <h3>Estimation budget (€/mois)</h3>
+            <div class="budget">
+              <label>Logement<input type="number" id="bLogement" min="0" placeholder="Ex: 450"></label>
+              <label>Transport<input type="number" id="bTransport" min="0" placeholder="Ex: 30"></label>
+              <label>Nourriture<input type="number" id="bFood" min="0" placeholder="Ex: 200"></label>
+              <label>Autres<input type="number" id="bAutres" min="0" placeholder="Ex: 100"></label>
+              <div class="budget-total">Total estimé : <strong id="bTotal">0 €</strong></div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section reveal">
+      <div class="container grid-3 intro-cards">
+        <article class="card">
+          <h3>Étapes</h3>
+          <p>Tout le cheminement de la création de compte Campus France au visa.</p>
+          <a href="etapes.html" class="btn">Voir</a>
+        </article>
+        <article class="card">
+          <h3>Conditions</h3>
+          <p>Niveaux linguistiques (TCF B2), prérequis par filière et documents.</p>
+          <a href="conditions.html" class="btn">Voir</a>
+        </article>
+        <article class="card">
+          <h3>Universités</h3>
+          <p>Comprendre le système LMD, exemples d'universités et critères d'admission.</p>
+          <a href="universites.html" class="btn">Voir</a>
+        </article>
+      </div>
+    </section>
+
+    <section class="section reveal">
+      <div class="container">
+        <h2>Ressources utiles</h2>
+        <div class="links-grid">
+          <a class="link-card" href="https://www.campusfrance.org" target="_blank" rel="noreferrer">Campus France (site officiel)</a>
+          <a class="link-card" href="https://www.service-public.fr" target="_blank" rel="noreferrer">Service-public.fr (infos administratives)</a>
+          <a class="link-card" href="https://www.diplomatie.gouv.fr" target="_blank" rel="noreferrer">France Diplomatie</a>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <div class="container footer-inner">
+      <p>© <span id="year"></span> Le site de Hadjer · Guide L1 Campus France</p>
+      <div class="small">Made with ❤️ — Infos à jour : vérifie toujours les sites officiels.</div>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
