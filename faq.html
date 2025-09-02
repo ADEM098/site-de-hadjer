@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>FAQ — Le site de Hadjer</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <audio id="bg-music" autoplay loop>
+  <source src="music.mp3" type="audio/mpeg">
+  Ton navigateur ne supporte pas l’audio.
+</audio>
+
+<!-- Bouton Play / Pause -->
+<button onclick="toggleMusic()" class="music-btn">🎵 Musique</button>
+
+  <header class="header">
+    <div class="container header-inner">
+      <a class="brand" href="index.html"><span>Le site de Hadjer</span></a>
+      <nav class="nav">
+        <a href="index.html">Accueil</a>
+        <a href="etapes.html">Étapes</a>
+        <a href="conditions.html">Conditions</a>
+        <a href="universites.html">Universités</a>
+        <a href="faq.html" class="active">FAQ</a>
+        <a href="contact.html" class="btn">Contact</a>
+      </nav>
+    </div>
+  </header>
+  <main>
+    <section class="section reveal">
+      <div class="container">
+        <h2>Questions fréquentes</h2>
+
+        <details><summary>Le TCF est-il obligatoire ?</summary>
+          <p>Le TCF ou équivalent (DELF/DALF) est généralement demandé pour valider le niveau de français. Certaines universités acceptent des alternatives ; vérifie la fiche formation.</p>
+        </details>
+
+        <details><summary>Quel score TCF correspond au B2 ?</summary>
+          <p>Pour le TCF, le niveau B2 correspond à un score autour de 350–500 selon les versions ; vérifie la grille officielle du test. (Les universités demandent le niveau, pas toujours un score exact.)</p>
+        </details>
+
+        <details><summary>Combien de vœux puis-je faire ?</summary>
+          <p>En licence via Campus France, tu peux généralement formuler jusqu’à 7 vœux. Certaines plateformes locales peuvent différer.</p>
+        </details>
+
+        <details><summary>Quels sont les délais ?</summary>
+          <p>Préparation et dépôt : novembre → février ; réponses : mars → juin ; visa : après acceptation. Ces périodes sont indicatives et changent chaque année.</p>
+        </details>
+
+        <details><summary>Que faire en cas de refus ?</summary>
+          <p>Contacte Campus France pour savoir pourquoi. Tu peux améliorer ton dossier (niveau langue, lettre de motivation), envisager d’autres universités, ou une année préparatoire.</p>
+        </details>
+
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <div class="container footer-inner">
+      <p>© <span id="year"></span> Le site de Hadjer</p>
+      <a href="index.html">Retour ↑</a>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>

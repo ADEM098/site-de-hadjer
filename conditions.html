@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Conditions & Prérequis — Le site de Hadjer</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+ <audio id="bg-music" autoplay loop>
+  <source src="music.mp3" type="audio/mpeg">
+  Ton navigateur ne supporte pas l’audio.
+</audio>
+
+<!-- Bouton Play / Pause -->
+<button onclick="toggleMusic()" class="music-btn">🎵 Musique</button>
+
+  <header class="header">
+    <div class="container header-inner">
+      <a class="brand" href="index.html"><span>Le site de Hadjer</span></a>
+      <nav class="nav">
+        <a href="index.html">Accueil</a>
+        <a href="etapes.html">Étapes</a>
+        <a href="conditions.html" class="active">Conditions</a>
+        <a href="universites.html">Universités</a>
+        <a href="faq.html">FAQ</a>
+        <a href="contact.html" class="btn">Contact</a>
+      </nav>
+    </div>
+  </header>
+<!-- Bouton pour contrôler la musique -->
+<button onclick="toggleMusic()" id="music-btn">🔊 Pause</button>
+
+  <main>
+    <section class="section reveal">
+      <div class="container">
+        <h2>Conditions & prérequis détaillés</h2>
+
+        <article class="card">
+          <h3>Niveau scolaire requis</h3>
+          <ul>
+            <li>Posséder le <strong>baccalauréat</strong> ou équivalent.</li>
+            <li>Les notes en 1ʳᵉ et Terminale sont souvent examinées (bon dossier scolaire = meilleur dossier).</li>
+            <li>Pour certaines filières (S, STI, ES) les prérequis varient : ex. maths pour informatique.</li>
+          </ul>
+        </article>
+
+        <article class="card">
+          <h3>Langue — TCF / DELF / DALF</h3>
+          <p><strong>Test recommandé :</strong> <em>TCF</em> (Test de Connaissance du Français). Alternatives : <em>DELF</em> ou <em>DALF</em>.</p>
+          <ul>
+            <li><strong>B2</strong> : niveau généralement exigé pour l’entrée en L1 (compréhension, expression écrite/orale opérationnelles).</li>
+            <li><strong>C1</strong> : demandé pour filières exigeantes ou pour garantir une intégration plus facile.</li>
+            <li>Certaines universités acceptent la preuve d’un enseignement antérieur en français (diplôme délivré en français).</li>
+          </ul>
+          <p><strong>Conseil :</strong> viser B2 minimum ; prépare-toi via centres de langues, cours intensifs, et tests blancs.</p>
+        </article>
+
+        <article class="card">
+          <h3>Documents courants à préparer</h3>
+          <ul>
+            <li>Passeport (valide au moins 6 mois après la rentrée).</li>
+            <li>Relevés de notes (1ʳᵉ & Terminale) — format PDF scanné.</li>
+            <li>Diplôme ou attestation de réussite au bac.</li>
+            <li>Lettre de motivation & CV (version française recommandée).</li>
+            <li>Certificats de langue (TCF/DELF) ou preuve d’enseignement en français.</li>
+            <li>Preuves financières (relevés bancaires, prise en charge parentale, bourse).</li>
+          </ul>
+        </article>
+
+        <div class="note">📌 Traductions : si documents en langue étrangère, fournis des traductions certifiées (selon exigence de l’université ou du consulat).</div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <div class="container footer-inner">
+      <p>© <span id="year"></span> Le site de Hadjer</p>
+      <a href="index.html">Retour ↑</a>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>

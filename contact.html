@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Contact — Le site de Hadjer</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+   <audio id="bg-music" autoplay loop>
+  <source src="music.mp3" type="audio/mpeg">
+  Ton navigateur ne supporte pas l’audio.
+</audio>
+
+<!-- Bouton Play / Pause -->
+<button onclick="toggleMusic()" class="music-btn">🎵 Musique</button>
+
+  <header class="header">
+    <div class="container header-inner">
+      <a class="brand" href="index.html"><span>Le site de Hadjer</span></a>
+      <nav class="nav">
+        <a href="index.html">Accueil</a>
+        <a href="etapes.html">Étapes</a>
+        <a href="conditions.html">Conditions</a>
+        <a href="universites.html">Universités</a>
+        <a href="faq.html">FAQ</a>
+        <a href="contact.html" class="active btn">Contact</a>
+      </nav>
+    </div>
+  </header>
+  <main>
+    <section class="section reveal">
+      <div class="container">
+        <h2>Contact & Liens utiles</h2>
+        <form id="contactForm" class="contact-form">
+          <div class="grid-2">
+            <label>Nom<input type="text" name="name" required></label>
+            <label>Email<input type="email" name="email" required></label>
+          </div>
+          <label>Message<textarea name="message" rows="5" required></textarea></label>
+          <button class="btn primary" type="submit">Envoyer (démo)</button>
+          <p class="note">Ce formulaire est en démonstration locale (sans envoi). Tu peux le connecter à un service plus tard.</p>
+        </form>
+
+        <h3>Liens officiels</h3>
+        <ul>
+          <li><a href="https://www.campusfrance.org" target="_blank" rel="noreferrer">Campus France</a></li>
+          <li><a href="https://www.service-public.fr" target="_blank" rel="noreferrer">Service Public (France)</a></li>
+          <li><a href="https://www.diplomatie.gouv.fr" target="_blank" rel="noreferrer">Ministère des Affaires Étrangères</a></li>
+        </ul>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <div class="container footer-inner">
+      <p>© <span id="year"></span> Le site de Hadjer</p>
+      <a href="index.html">Retour ↑</a>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>

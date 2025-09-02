@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Étapes — Le site de Hadjer</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <audio id="bg-music" autoplay loop>
+  <source src="music.mp3" type="audio/mpeg">
+  Ton navigateur ne supporte pas l’audio.
+</audio>
+
+<!-- Bouton Play / Pause -->
+<button onclick="toggleMusic()" class="music-btn">🎵 Musique</button>
+
+  <header class="header">
+    <div class="container header-inner">
+      <a class="brand" href="index.html"><span>Le site de Hadjer</span></a>
+      <nav class="nav">
+        <a href="index.html">Accueil</a>
+        <a href="etapes.html" class="active">Étapes</a>
+        <a href="conditions.html">Conditions</a>
+        <a href="universites.html">Universités</a>
+        <a href="faq.html">FAQ</a>
+        <a href="contact.html" class="btn">Contact</a>
+      </nav>
+    </div>
+  </header>
+  <main>
+    <section class="section reveal">
+      <div class="container">
+        <h2>Les étapes détaillées — Parcours Campus France (L1)</h2>
+        <ol class="steps">
+          <li>
+            <h3>1) Vérifier l’éligibilité</h3>
+            <p>Être titulaire du <strong>baccalauréat</strong> ou équivalent. Certaines universités demandent des prérequis (maths pour l’informatique, langues pour lettres, etc.).</p>
+          </li>
+
+          <li>
+            <h3>2) Préparer les documents</h3>
+            <p>Scanner & traduire si nécessaire : passeport, relevés de notes (1ère & Terminale), diplôme ou attestation de réussite, CV, lettre(s) de motivation, attestations de stage/projet si pertinent.</p>
+            <p><strong>Conseil :</strong> classe les fichiers par ordre et nomme-les clairement (ex : 2024_Releve_Bac.pdf).</p>
+          </li>
+
+          <li>
+            <h3>3) Créer un compte Campus France / Études en France</h3>
+            <p>Inscris-toi sur la plateforme Campus France de ton pays (ex. algérie.campusfrance.org). Remplis le profil, parcours scolaire et joins les documents. Choisis jusqu'à 7 vœux pour la Licence 1.</p>
+          </li>
+
+          <li>
+            <h3>4) Passer le test de langue</h3>
+            <p>Tests acceptés : <strong>TCF, DELF, DALF</strong>. Pour L1 la plupart des universités demandent un niveau <strong>B2</strong> (voire C1 pour filières sélectives).  
+            <br><strong>Astuce :</strong> réserve le TCF à l’avance — les résultats peuvent prendre plusieurs semaines.</p>
+          </li>
+
+          <li>
+            <h3>5) Validation par Campus France et entretien</h3>
+            <p>Campus France vérifie la complétude du dossier. Tu peux être convoqué à un entretien (présenter ton projet d’études, motivations, moyens financiers).</p>
+          </li>
+
+          <li>
+            <h3>6) Réponses des universités</h3>
+            <p>Les universités reçoivent ton dossier et rendent leur décision : acceptation, liste d’attente ou refus. Si accepté, télécharge l’attestation/préinscription envoyée par l’université.</p>
+          </li>
+
+          <li>
+            <h3>7) Demande de visa étudiant (VLS-TS)</h3>
+            <p>Avec l’attestation d’admission, prends rendez-vous au centre de visas (TLS/ VFS selon ton pays). Documents courants : passeport, attestation d'admission, preuve de ressources (≈ 615 € / mois en 2025, variable), assurance, justificatif logement.</p>
+          </li>
+
+          <li>
+            <h3>8) Préparatifs & arrivée</h3>
+            <p>Logement (CROUS, résidences privées, colocation), assurance, ouverture d’un compte bancaire, inscription administrative et pédagogique à l’université, validation du VLS-TS à l’OFII une fois en France si nécessaire.</p>
+          </li>
+        </ol>
+
+        <div class="note">⚠️ Les procédures et montants évoluent — vérifie toujours les sites officiels (Campus France, consulat).</div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <div class="container footer-inner">
+      <p>© <span id="year"></span> Le site de Hadjer</p>
+      <a href="index.html">Retour ↑</a>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
